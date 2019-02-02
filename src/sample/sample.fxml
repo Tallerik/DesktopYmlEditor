@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <SplitPane dividerPositions="0.1368421052631579" orientation="VERTICAL" prefHeight="287.0" prefWidth="307.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="29.0" prefWidth="305.0">
+               <children>
+                  <TextField id="filepath" layoutY="4.0" prefHeight="27.0" prefWidth="204.0" />
+                  <Button layoutX="257.0" layoutY="4.0" mnemonicParsing="false" text="Save" />
+                  <Button id="loadbtn" layoutX="208.0" layoutY="4.0" mnemonicParsing="false" text="Load" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="295.0" prefWidth="373.0">
+               <children>
+                  <VBox id="content" prefHeight="242.0" prefWidth="305.0" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</GridPane>
